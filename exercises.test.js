@@ -2,14 +2,14 @@ const testFn = require('./exercises');
 const {stringLength, reverseString, capitalize, calculator} = testFn;
 
 describe('String functions', () => {
-    test('Length of "World" is 5', () =>{
+    test('Length of "Fight" is 5', () =>{
         // Assert
-        expect(stringLength('World')).toBe(5);
+        expect(stringLength('Fight')).toBe(5);
     });
 
     test('Length of string is too long', () =>{
         // Assert
-        expect(stringLength('hello world')).toThrow(Error);
+        expect(stringLength('The number one')).toThrow(Error);
     });
 
     test('Length of string is too short', () =>{
@@ -19,7 +19,7 @@ describe('String functions', () => {
 
     test('Get a reverse string', () =>{
         // Assert
-        expect(reverseString("arthur")).toMatch(/ruhtra/);
+        expect(reverseString("club")).toMatch(/bulc/);
     });
 
     test('capitalize should return first character capitalized', () =>{
@@ -37,7 +37,7 @@ describe('Calculator functions', () => {
     describe('add function', () =>{
         test('add of 5 and 3 is 8', () =>{
             // Assert
-            expect(calculator.add(5,3)).toBe(8);
+            expect(calculator.add(4,4)).toBe(8);
         })
 
         test('add does not have undefined arguments', () =>{
@@ -54,7 +54,7 @@ describe('Calculator functions', () => {
     describe('substract function', () =>{
         test('substract of 10 and 3 is 7', () =>{
             // Assert
-            expect(calculator.subtract(10,3)).toBe(7);
+            expect(calculator.subtract(14,7)).toBe(7);
         })
 
         test('substract does not have undefined arguments', () =>{
